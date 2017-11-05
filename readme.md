@@ -1,5 +1,6 @@
 1. For POST : https://rest-api-ninja.herokuapp.com/api/ninjas
 
+
 Use below json in Body raw as application/json. Name is required .
 
 ``
@@ -12,6 +13,8 @@ Use below json in Body raw as application/json. Name is required .
 }
 ``
 or
+<br/> 
+
 ``
 {
 	"name":"Piash",
