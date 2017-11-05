@@ -9,7 +9,7 @@ const app = express() ;
 
 //Connecting mongoDB
 mongoose.Promise = global.Promise ;
-mongoose.connect('mongodb://localhost/ninjago',{
+mongoose.connect('mongodb://piashsarker:piash12345@ds249415.mlab.com:49415/ninja_rest_api',{
   useMongoClient : true
 });
 
