@@ -1,7 +1,5 @@
 <b> 1. For POST : https://rest-api-ninja.herokuapp.com/api/ninjas </b>
-
-
-    Use below json in Body raw as application/json. Name is required .
+ Use below json in Body raw as application/json. Name is required .
 <br/>
 
 <pre> <code>
@@ -24,7 +22,7 @@ or
 	"rank":"black belt",
 	"available": true
 }
-</code> </pre>
+ </pre></code>
 
 <b> 2. For GET : https://rest-api-ninja.herokuapp.com/api/ninjas</br>
 

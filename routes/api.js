@@ -18,7 +18,7 @@ router.get('/ninjas_by_location',function(req, res , next){
       },
       {maxDistance: 100000 , spherical:true}).then(function(ninjas){
         res.send(ninjas);
-      });
+      }).catch(next);
 });
 
 
@@ -38,7 +38,7 @@ router.put('/ninjas/:id', function(req, res,next){
    Ninja.findByIdAndUpdate({_id:req.params.id},req.body).then(function(){
        Ninja.findOne({_id: req.params.id}).then(function(ninja){
          res.send(ninja);
-       });
+       }).catch(next);
 
      });
 });
@@ -49,7 +49,7 @@ router.delete('/ninjas/:id', function(req, res,next){
 
   Ninja.findByIdAndRemove({_id:req.params.id}).then(function(ninja){
     res.send(ninja);
-  });
+  }).catch(next);
 
 });
 
