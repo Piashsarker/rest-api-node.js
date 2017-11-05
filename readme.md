@@ -1,9 +1,10 @@
 1. For POST : https://rest-api-ninja.herokuapp.com/api/ninjas
 
 
-Use below json in Body raw as application/json. Name is required .
+    Use below json in Body raw as application/json. Name is required .
 <br/>
-``
+
+<pre> <code>
 {
  "name":"Piash",
  "rank":"black belt",
@@ -11,7 +12,7 @@ Use below json in Body raw as application/json. Name is required .
  "geometry": { "coordinates":[-85.245,25.991], "type": "point"
  }
 }
-``
+</pre> </code> 
 <br/>
 or
 
