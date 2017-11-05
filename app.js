@@ -26,5 +26,6 @@ app.use(function(err, req , res , next){
 
 
 //PORT & Listen for request
-app.listen(process.env.port || 4000 );
-console.log("PORT "+process.env.port || 4000);
+//listen to port
+app.listen(process.env.PORT || 4545);
+console.log("PORT: "+ (process.env.PORT || 4545));
