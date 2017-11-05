@@ -1,0 +1,19 @@
+{
+  "name": "rest_api",
+  "version": "1.0.0",
+  "description": "Rest API Example Using Node.js , Express & MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "sarkerpt@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.0"
+  }
+}
