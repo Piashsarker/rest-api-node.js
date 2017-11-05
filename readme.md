@@ -2,7 +2,7 @@
 
 
 Use below json in Body raw as application/json. Name is required .
-
+<br/>
 ``
 {
  "name":"Piash",
@@ -12,26 +12,27 @@ Use below json in Body raw as application/json. Name is required .
  }
 }
 ``
+<br/>
 or
-<br/> 
+
+<br/>
 
 ``
 {
 	"name":"Piash",
 	"rank":"black belt",
 	"available": true
-
 }
 ``
 
 2. For GET : https://rest-api-ninja.herokuapp.com/api/ninjas
 
-3. For PUT or Update :
+3. For PUT or Update :<br/>
 https://rest-api-ninja.herokuapp.com/api/ninjas/{id}  
-Example with {id} :
+Example with {id} : <br/>
 https://rest-api-ninja.herokuapp.com/api/ninjas/59feae8379acec6ada110468
-
-Use below json in Body raw as application/json. Name is required .
+<br/><br/>
+Use below json in Body raw as application/json. Name is required .<br/>
 ``
 {
 	"name":"PT Sarker",
@@ -39,7 +40,8 @@ Use below json in Body raw as application/json. Name is required .
 	"available": true
 }
 ``
-4. For DELETE request :
-https://rest-api-ninja.herokuapp.com/api/ninjas/{id}  
-Example with {id} :
+<br/><br/>
+4. For DELETE request :<br/>
+https://rest-api-ninja.herokuapp.com/api/ninjas/{id}  <br/>
+Example with {id} :<br/>
 https://rest-api-ninja.herokuapp.com/api/ninjas/59feae8379acec6ada110468
