@@ -26,6 +26,4 @@ app.use(function(err, req , res , next){
 
 
 //PORT & Listen for request
-app.listen(process.env.port || 4000 , function(){
-  console.log('SERVER LISTENING PORT : '+(process.env.port || 4000));
-});
+app.listen(process.env.port || 4000 ); 
