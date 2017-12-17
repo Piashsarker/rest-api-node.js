@@ -4,14 +4,12 @@ const Ninja = require('../models/ninja');
 
 // get a list of ninjas from a database
 router.get('/ninjas', function(req, res,next){
-    res.setHeader('Access-Control-Allow-Origin', '*');
     Ninja.find({}).then(function(ninjas){
       res.send(ninjas);
     });
 });
 
 router.get('/ninjas_by_location',function(req, res , next){
-    res.setHeader('Access-Control-Allow-Origin', '*');
     Ninja.geoNear({
       type:'Point',coordinates:
         [ parseFloat(req.query.lng),
@@ -26,7 +24,6 @@ router.get('/ninjas_by_location',function(req, res , next){
 
 // add a new ninja to database
 router.post('/ninjas', function(req, res,next){
-    res.setHeader('Access-Control-Allow-Origin', '*');
   console.log(req.body);
   //Saving in database and sending the response .
   Ninja.create(req.body).then(function(ninja){
@@ -38,7 +35,6 @@ router.post('/ninjas', function(req, res,next){
 
 //update a ninja in the database
 router.put('/ninjas/:id', function(req, res,next){
-    res.setHeader('Access-Control-Allow-Origin', '*');
    Ninja.findByIdAndUpdate({_id:req.params.id},req.body).then(function(){
        Ninja.findOne({_id: req.params.id}).then(function(ninja){
          res.send(ninja);
@@ -49,7 +45,6 @@ router.put('/ninjas/:id', function(req, res,next){
 
 // delete a ninja from the database
 router.delete('/ninjas/:id', function(req, res,next){
-    res.setHeader('Access-Control-Allow-Origin', '*');
   console.log("DELETE Request ID : "+req.params.id);
 
   Ninja.findByIdAndRemove({_id:req.params.id}).then(function(ninja){
