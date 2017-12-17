@@ -13,6 +13,7 @@ mongoose.connect('mongodb://piashsarker:piash12345@ds249415.mlab.com:49415/ninja
   useMongoClient : true
 });
 
+app.use(express.static('public'));
 
 app.use(bodyParser.json());
 //initialize routes
@@ -21,7 +22,7 @@ app.use('/api',routes);
 app.use(function(err, req , res , next){
   console.log(err);
   res.status(422).send({error: err.message});
-})
+});
 
 
 
