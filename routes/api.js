@@ -2,12 +2,19 @@ const express = require('express');
 const router = express.Router();
 const Ninja = require('../models/ninja');
 
+
 // get a list of ninjas from a database
 router.get('/ninjas', function(req, res,next){
     Ninja.find({}).then(function(ninjas){
       res.send(ninjas);
     });
 });
+
+
+
+
+
+
 
 router.get('/ninjas_by_location',function(req, res , next){
     Ninja.geoNear({
